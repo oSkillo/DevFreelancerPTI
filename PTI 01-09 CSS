@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f7f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Seções */
+.faixa {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    margin: 1rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.faixa h2 {
+    margin-bottom: 1rem;
+    color: #0a3d62;
+}
+
+/* Lista de serviços */
+.faixa ul {
+    list-style: none;
+}
+.faixa ul li {
+    margin: 0.5rem 0;
+}
+
+/* Formulário */
+.contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+.contato input, 
+.contato textarea {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contato button {
+    background: #0a3d62;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contato button:hover {
+    background: #052c48;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0a3d62;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .faixa {
+        padding: 1.5rem;
+    }
+    .contato form {
+        width: 90%;
+    }
+}
